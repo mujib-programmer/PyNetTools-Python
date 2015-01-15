@@ -1,0 +1,20 @@
+Instruksi :
+1. pastikan hak akses file PyNetTools.py dan file PyNetTools dengan perintah berikut :
+   - sudo chown root:root PyNetTools.py
+   - sudo chown root:root PyNetTools
+
+   - sudo chmod 4755 PyNetTools.py
+   - sudo chmod 4755 PyNetTools
+
+2. Jika kamu mengkompilasi ulang file PyNetTools.c dengan gcc, pastikan file hasil kompilasi tersebut memiliki hak akses yang sama dengan menjalankan perintah chown dan chmod seperti diatas.
+3. Kamu bisa menjalankan aplikasi ini dengan dua cara yaitu :
+   - sudo python PyNetTools.py, kemudian akan ditampilkan GUI aplikasi yang bisa digunakan user. Untuk mengubah tampilan GUI cobalah mengubahnya di file ini.
+   - Atau, kamu bisa menjalankannya dari file PyNetTools dengan perintah ./PyNetTools
+4. PyNetTools berfungsi menjalankan program (yaitu PyNetTools.py) dari user root, sehingga tidak perlu menggunakan perintah sudo untuk menjalankan file ini. Paket ICMP membutuhkan hak akses root untuk menjalankannya.
+5. File logic aplikasi untuk menjalankan perintah ping adalah di MyPing.py
+6. File logic aplikasi untuk menjalankan perintah traceroute adalah di MyTraceroute.py
+7. output yang dihasilkan dan ditampilkan di aplikasi umumnya di generate dari method yang berawalan "def print_" cobalah mempelajarinya di file MyPing.py dan MyTraceroute.py
+8. Aplikasi ini membutuhkan library pyqt4 dan python 2.7.x untuk dijalankan.
+9. cobalah untuk menginstal python, pyqt.
+10. Selamat mencoba dan menggunakan aplikasi ini. Oh ya, komentar di python diawali tanda # untuk satu baris komentar, dan tanda """ untuk blok baris komentar dengan diakhiri tanda """ kembali.
+11. Jika mendapatkan kesulitan saat menjalankan aplikasi ini, silahkan hubungi saya kembali, besok kita akan bicarakan.
