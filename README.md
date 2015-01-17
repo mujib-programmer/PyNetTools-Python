@@ -1,38 +1,27 @@
-# Python-Skeleton-Projects
-Project skeleton for python
+# PyNetTools
+This application is intended for linux based operating system for now, may be it will be cross platform later. 
 
-Install the following Python packages: 
-1. pip from http://pypi.python.org/pypi/pip 
-2. distribute from http://pypi.python.org/pypi/distribute 
-3. nose from http://pypi.python.org/pypi/nose 
-4. virtualenv from http://pypi.python.org/pypi/virtualenv 
+## Instruction how to use PyNetTools Application :
+### 1. Make sure file permissions for PyNetTools.py and PyNetTools files with the following command: 
+   - sudo chown root:root PyNetTools.py 
+   - sudo chown root:root PyNetTools 
+   - sudo chmod 4755 PyNetTools.py 
+   - sudo chmod 4755 PyNetTools 
 
-To use this skeleton project, rename directory "NAME" to your "PROJECT_NAME".
+### 2. If you recompile PyNetTools.c file with gcc, make sure the file compilation of these have the same access rights as above.
 
-people commonly go into the tests/ directory to try to run fi les there, which won’t work. To run
-your application’s tests, you would need to be above tests/ and this location I have above. Say
-you try this:
+### 3. You can run this application in two ways: 
+   - sudo python PyNetTools.py, then it will display a GUI application that can be used. To change the look of the GUI try to change it in this file.
+   - Alternatively, you can run it from the command line. type ./PyNetTools in terminal
 
-$ cd tests/
-$ nosetests
-# WRONG! WRONG! WRONG!
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Ran 0 tests in 0.000s
-OK
+### 4. PyNetTools file will run the program (ie PyNetTools.py) with the root user, so no need to use sudo to run this file. ICMP packets require root privileges to run.
 
-The correct way to test your script is, go to your root directory and run nosetests like this command :
+### 5. Application logic file to run the ping command is in MyPing.py
 
-$ cd .. # get out of tests/
-$ ls # CORRECT! you are now in the right spot
-NAME
-bin
-docs
-setup.py
-tests
-$ nosetests
-.
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Ran 1 test in 0.004s
-OK
+### 6. Application logic file to run traceroute command is in MyTraceroute.py
 
+### 7. output is generated and displayed in the application generally generated from the method beginning with "def print_" try to learn it in a file MyPing.py and MyTraceroute.py 
 
+### 8. This application requires PyQt4 library and python 2.7.x to running well.
+
+### 9. All logic of this application is located in file in models directory.
